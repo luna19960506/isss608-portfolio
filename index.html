@@ -3,16 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>ISSS608 Coursework</title>
+
+  <style>
+    body { font-family: Arial; margin: 0; }
+
+    .navbar {
+      background: #f8f9fa;
+      padding: 10px;
+    }
+
+    .navbar a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>ISSS608 Coursework - LI XINYUE</h1>
+<div class="navbar">
+  <a href="#">ISSS608-VAA</a>
 
-<ul>
-  <li><a href="hands-on-exercise1/index.html">Week 1 Exercise</a></li>
-  <li><a href="hands-on-exercise2/index.html">Week 2 Exercise</a></li>
-</ul>
+  <div class="dropdown">
+    <a href="#">Hands-on Exercise ▼</a>
+    <div class="dropdown-content">
+      <a href="hands-on-exercise1/index.html">Exercise 1</a>
+      <a href="hands-on-exercise2/index.html">Exercise 2</a>
+    </div>
+  </div>
+</div>
+
+<h2 style="padding:20px;">Welcome to ISSS608</h2>
 
 </body>
 </html>
